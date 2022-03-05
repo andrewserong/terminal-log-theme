@@ -1,0 +1,52 @@
+/*
+Theme Name: Terminal Log
+Theme URI: https://github.com/andrewserong/terminal-log-theme
+Author: Andrew Serong
+Description: A blogging theme inspired by old style terminals in sci-fi videogames
+Requires at least: 5.9
+Tested up to: 5.9
+Requires PHP: 5.6
+Version: 0.1
+License: GNU General Public License v2 or later
+License URI: http://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: terminal-log
+
+Terminal Log theme is distributed under the terms of the GNU GPL
+*/
+
+/* Block styles */
+.wp-block-group.is-style-pipe-separator > * + *::before {
+    content: "|";
+    margin: 0 0.5em;
+    opacity: 1;
+}
+
+.wp-block-group.is-style-greater-than-separator > * + *::before {
+    content: ">";
+    margin: 0 0.5em;
+    opacity: 1;
+}
+
+h1::before {
+    content: "#";
+    margin-inline-end: 0.5em;
+    opacity: 0.4;
+}
+
+h2::before {
+    content: "##";
+    margin-inline-end: 0.5em;
+    opacity: 0.4;
+}
+
+h3::before {
+    content: "###";
+    margin-inline-end: 0.5em;
+    opacity: 0.4;
+}
+
+h4::before {
+    content: "####";
+    margin-inline-end: 0.5em;
+    opacity: 0.4;
+}

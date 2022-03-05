@@ -1,0 +1,141 @@
+{
+	"$schema": "https://schemas.wp.org/trunk/theme.json",
+	"version": 2,
+	"settings": {
+		"appearanceTools": true,
+		"color": {
+			"palette": [
+				{
+					"name": "Background",
+					"slug": "terminal-background",
+					"color": "#261f23"
+				},
+				{
+					"name": "Aside background",
+					"slug": "aside-background",
+					"color": "#1a1418"
+				},
+				{
+					"name": "Primary",
+					"slug": "primary",
+					"color": "#c38b38"
+				},
+				{
+					"name": "Accent",
+					"slug": "accent",
+					"color": "#f00"
+				}
+			],
+			"link": true
+		},
+		"layout": {
+			"contentSize": "800px",
+			"wideSize": "1280px"
+		},
+		"typography": {
+			"customFontSize": true,
+			"lineHeight": true,
+			"fontFamilies": [
+				{
+					"fontFamily": "\"Inconsolata\", monospace",
+					"slug": "inconsolata",
+					"name": "Inconsolata",
+					"google": "family=Inconsolata&display=swap"
+				}
+			],
+			"fontSizes": [
+				{
+					"size": "1rem",
+					"slug": "small"
+				},
+				{
+					"size": "1rem",
+					"slug": "medium"
+				},
+				{
+					"size": "1rem",
+					"slug": "large"
+				},
+				{
+					"size": "1rem",
+					"slug": "x-large"
+				}
+			]
+		}
+	},
+	"styles": {
+		"blocks": {
+			"core/site-title": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--inconsolata)"
+				}
+			},
+			"core/navigation": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--inconsolata)"
+				}
+			}
+		},
+		"color": {
+			"background": "var(--wp--preset--color--terminal-background)",
+			"text": "var(--wp--preset--color--primary)"
+		},
+		"elements": {
+			"h1": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--inconsolata)",
+					"fontSize": "var(--wp--preset--font-size--x-large)",
+					"fontWeight": "400"
+				}
+			},
+			"h2": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--inconsolata)",
+					"fontSize": "var(--wp--preset--font-size--large)",
+					"fontWeight": "400"
+				}
+			},
+			"h3": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--inconsolata)",
+					"fontSize": "var(--wp--preset--font-size--medium)",
+					"fontWeight": "400"
+				}
+			},
+			"h4": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--inconsolata)",
+					"fontSize": "var(--wp--preset--font-size--medium)",
+					"fontWeight": "400"
+				}
+			},
+			"h5": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--inconsolata)",
+					"fontSize": "var(--wp--preset--font-size--medium)",
+					"fontWeight": "400"
+				}
+			},
+			"h6": {
+				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--inconsolata)",
+					"fontSize": "var(--wp--preset--font-size--medium)",
+					"fontWeight": "400"
+				}
+			},
+			"link": {
+				"color": {
+					"text": "var(--wp--preset--color--primary)"
+				},
+				"typography": {}
+			}
+		},
+		"spacing": {
+			"blockGap": "1em"
+		},
+		"typography": {
+			"fontFamily": "var(--wp--preset--font-family--inconsolata)",
+			"fontSize": "var(--wp--preset--font-size--medium)"
+		}
+	}
+}
