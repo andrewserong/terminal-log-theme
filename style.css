@@ -84,3 +84,21 @@ h4::before {
 .wp-block-quote {
     margin-bottom: 1em;
 }
+
+.wp-block-gallery {
+    margin: revert;
+}
+
+.wp-block-image {
+    margin: revert;
+}
+
+.wp-block-gallery figcaption {
+    color: currentColor;
+    font-size: var(--wp--preset--font-size--medium);
+}
+
+.wp-block-image figcaption {
+    color: currentColor;
+    font-size: var(--wp--preset--font-size--medium);
+}
