@@ -1,19 +1,12 @@
 <?php
 
-if ( ! function_exists( 'terminal_log_support' ) ) :
+if ( ! function_exists( 'terminal_log_support' ) ) {
 	function terminal_log_support()  {
 		// Adding support for core block visual styles.
 		add_theme_support( 'wp-block-styles' );
 
 		// Enqueue editor styles.
 		add_editor_style( 'style.css' );
-
-		// Enqueue Google fonts.
-		add_editor_style(
-			array(
-				terminal_log_fonts_url()
-			)
-		);
 
 		// Register block styles.
 		register_block_style(
@@ -53,7 +46,20 @@ if ( ! function_exists( 'terminal_log_support' ) ) :
 		);
 	}
 	add_action( 'after_setup_theme', 'terminal_log_support' );
-endif;
+}
+
+/**
+ * Enqueue scripts and styles in the editor.
+ */
+function terminal_log_editor_styles() {
+	// Enqueue Google fonts.
+	add_editor_style(
+		array(
+			terminal_log_fonts_url()
+		)
+	);
+}
+add_action( 'admin_init', 'terminal_log_editor_styles' );
 
 /**
  * Enqueue scripts and styles.
