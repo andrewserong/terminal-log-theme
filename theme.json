@@ -33,6 +33,7 @@
 			"wideSize": "1280px"
 		},
 		"typography": {
+			"dropCap": false,
 			"customFontSize": true,
 			"lineHeight": true,
 			"fontFamilies": [
@@ -138,8 +139,7 @@
 			"link": {
 				"color": {
 					"text": "var(--wp--preset--color--primary)"
-				},
-				"typography": {}
+				}
 			}
 		},
 		"spacing": {
