@@ -65,6 +65,18 @@
 	},
 	"styles": {
 		"blocks": {
+			"core/button": {
+				"border": {
+					"radius": "0"
+				},
+				"color": {
+					"background": "var(--wp--preset--color--primary)",
+					"text": "var(--wp--preset--color--terminal-background)"
+				},
+				"typography": {
+					"fontSize": "var(--wp--preset--font-size--medium)"
+				}
+			},
 			"core/site-title": {
 				"typography": {
 					"fontFamily": "var(--wp--preset--font-family--inconsolata)"

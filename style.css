@@ -102,3 +102,18 @@ h4::before {
     color: currentColor;
     font-size: var(--wp--preset--font-size--medium);
 }
+
+.wp-block-post-comments .commentlist .comment p {
+    margin: 1em 0;
+    font-size: var(--wp--preset--font-size--medium);
+}
+
+.wp-block-post-comments .reply {
+    font-size: var(--wp--preset--font-size--medium);
+}
+
+.wp-block-post-comments .comment-form textarea {
+    border-color: currentColor;
+    background-color: var(--wp--preset--color--aside-background);
+    color: var(--wp--preset--color--primary);
+}
