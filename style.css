@@ -18,7 +18,7 @@ Terminal Log theme is distributed under the terms of the GNU GPL
     box-sizing: border-box;
 }
 
-.wp-block-group { 
+p, h1, h2, h3, h4, h5, h6 {
     text-shadow: 0 0 40px currentColor, 2px 2px 0 rgba(0,0,0,0.6);
 }
 

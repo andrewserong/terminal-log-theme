@@ -75,6 +75,7 @@
 					"text": "var(--wp--preset--color--terminal-background)"
 				},
 				"typography": {
+					"fontFamily": "var(--wp--preset--font-family--inconsolata)",
 					"fontSize": "var(--wp--preset--font-size--medium)"
 				}
 			},
