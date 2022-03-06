@@ -135,7 +135,8 @@
 		},
 		"typography": {
 			"fontFamily": "var(--wp--preset--font-family--inconsolata)",
-			"fontSize": "var(--wp--preset--font-size--medium)"
+			"fontSize": "var(--wp--preset--font-size--medium)",
+			"lineHeight": "1.5"
 		}
 	}
 }

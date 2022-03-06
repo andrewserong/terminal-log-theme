@@ -14,8 +14,16 @@ Text Domain: terminal-log
 Terminal Log theme is distributed under the terms of the GNU GPL
 */
 
+* {
+    box-sizing: border-box;
+}
+
+.wp-block-group { 
+    text-shadow: 0 0 40px currentColor, 2px 2px 0 rgba(0,0,0,0.6);
+}
+
 /* Block styles */
-.wp-block-group.is-style-pipe-separator > * + *::before {
+.wp-block-group.is-style-pipe-separator > *:not(:last-child)::after {
     content: "|";
     margin: 0 0.5em;
     opacity: 1;
@@ -25,6 +33,27 @@ Terminal Log theme is distributed under the terms of the GNU GPL
     content: ">";
     margin: 0 0.5em;
     opacity: 1;
+}
+
+.wp-block-separator.is-style-hash-line,
+.wp-block-separator.is-style-dash-line {
+    border: none;
+    height: 1em;
+    width: auto !important;
+    margin-block-start: 0;
+    margin-block-end: 1em;
+}
+
+.is-style-hash-line::before {
+    border: none;
+    content: "################################";
+    display: block;
+}
+
+.is-style-dash-line::before {
+    border: none;
+    content: "--------------------------------";
+    display: block;
 }
 
 h1::before {
@@ -49,4 +78,9 @@ h4::before {
     content: "####";
     margin-inline-end: 0.5em;
     opacity: 0.4;
+}
+
+/* Core block CSS overrides */
+.wp-block-quote {
+    margin-bottom: 1em;
 }

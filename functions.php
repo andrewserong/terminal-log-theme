@@ -25,7 +25,6 @@ if ( ! function_exists( 'terminal_log_support' ) ) :
 			)
 		);
 
-		// Register block styles.
 		register_block_style(
 			'core/group',
 			array(
@@ -33,7 +32,25 @@ if ( ! function_exists( 'terminal_log_support' ) ) :
 				'label'        => __( 'Greater than separator', 'terminal-log' ),
 				'style_handle' => 'terminal-log-style',
 			)
-		);		
+		);
+
+		register_block_style(
+			'core/separator',
+			array(
+				'name'         => 'hash-line',
+				'label'        => __( 'Hash line', 'terminal-log' ),
+				'style_handle' => 'terminal-log-style',
+			)
+		);
+		
+		register_block_style(
+			'core/separator',
+			array(
+				'name'         => 'dash-line',
+				'label'        => __( 'Dash line', 'terminal-log' ),
+				'style_handle' => 'terminal-log-style',
+			)
+		);
 	}
 	add_action( 'after_setup_theme', 'terminal_log_support' );
 endif;
