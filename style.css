@@ -86,11 +86,11 @@ h4::before {
 }
 
 .wp-block-gallery {
-    margin: revert;
+    margin: inherit;
 }
 
 .wp-block-image {
-    margin: revert;
+    margin: inherit;
 }
 
 .wp-block-gallery figcaption {

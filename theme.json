@@ -4,6 +4,13 @@
 	"settings": {
 		"appearanceTools": true,
 		"color": {
+			"gradients": [
+				{
+					"slug": "background-glow",
+					"gradient": "radial-gradient(circle, hsl(326,9%,18%) 0%, var(--wp--preset--color--terminal-background) 75%, var(--wp--preset--color--terminal-background) 100%) fixed",
+					"name": "Background glow"
+				}
+			],
 			"palette": [
 				{
 					"name": "Background",
@@ -29,8 +36,8 @@
 			"link": true
 		},
 		"layout": {
-			"contentSize": "800px",
-			"wideSize": "1280px"
+			"contentSize": "640px",
+			"wideSize": "960px"
 		},
 		"typography": {
 			"dropCap": false,
@@ -91,6 +98,7 @@
 			}
 		},
 		"color": {
+			"gradient": "var(--wp--preset--gradient--background-glow)",
 			"background": "var(--wp--preset--color--terminal-background)",
 			"text": "var(--wp--preset--color--primary)"
 		},
